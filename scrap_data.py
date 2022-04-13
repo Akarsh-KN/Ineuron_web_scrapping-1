@@ -158,7 +158,7 @@ def scrap_course_data(course_data):
             data1['isJobGuaranteeProgram'] = course_data[i]["props"]["pageProps"]["data"]["isJobGuaranteeProgram"]
             data1['description'] = course_data[i]["props"]["pageProps"]["data"]['details']['description']
 
-            if 'pricing' not in course_data[0]["props"]["pageProps"]["data"]['details']:
+            if 'pricing' not in course_data[i]["props"]["pageProps"]["data"]['details']:
                 data1['pricing'] = 'NULL'
                 data1['projects'] = "NUll"
                 data1['projects_overview'] = "NUll"

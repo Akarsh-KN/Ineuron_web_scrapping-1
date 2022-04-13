@@ -107,3 +107,16 @@ werkzeug - 2022-04-13 13:10:49,681 - INFO -  * Restarting with stat
 werkzeug - 2022-04-13 13:10:50,277 - WARNING -  * Debugger is active!
 werkzeug - 2022-04-13 13:10:50,280 - INFO -  * Debugger PIN: 508-687-340
 werkzeug - 2022-04-13 13:10:50,316 - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+werkzeug - 2022-04-13 13:29:34,473 - INFO -  * Restarting with stat
+werkzeug - 2022-04-13 13:29:35,476 - WARNING -  * Debugger is active!
+werkzeug - 2022-04-13 13:29:35,492 - INFO -  * Debugger PIN: 508-687-340
+werkzeug - 2022-04-13 13:29:35,538 - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+werkzeug - 2022-04-13 13:29:37,101 - INFO - 127.0.0.1 - - [13/Apr/2022 13:29:37] "GET / HTTP/1.1" 200 -
+werkzeug - 2022-04-13 13:29:37,149 - INFO - 127.0.0.1 - - [13/Apr/2022 13:29:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+werkzeug - 2022-04-13 13:29:37,149 - INFO - 127.0.0.1 - - [13/Apr/2022 13:29:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+root - 2022-04-13 13:29:43,086 - INFO - Connecting to DB
+root - 2022-04-13 13:29:43,298 - INFO - DB connection is successful
+scrap_data - 2022-04-13 13:29:46,069 - INFO - Data retrieved successfully
+scrap_data - 2022-04-13 13:36:21,588 - INFO - Failed to scrap the data
+scrap_data - 2022-04-13 13:36:21,588 - ERROR - 'pricing'
+werkzeug - 2022-04-13 13:36:21,689 - INFO - 127.0.0.1 - - [13/Apr/2022 13:36:21] "POST /scrap HTTP/1.1" 200 -
