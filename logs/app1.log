@@ -103,3 +103,7 @@ werkzeug - 2022-04-13 13:10:14,264 - INFO -  * Restarting with stat
 werkzeug - 2022-04-13 13:10:14,989 - WARNING -  * Debugger is active!
 werkzeug - 2022-04-13 13:10:14,997 - INFO -  * Debugger PIN: 508-687-340
 werkzeug - 2022-04-13 13:10:15,040 - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+werkzeug - 2022-04-13 13:10:49,681 - INFO -  * Restarting with stat
+werkzeug - 2022-04-13 13:10:50,277 - WARNING -  * Debugger is active!
+werkzeug - 2022-04-13 13:10:50,280 - INFO -  * Debugger PIN: 508-687-340
+werkzeug - 2022-04-13 13:10:50,316 - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
