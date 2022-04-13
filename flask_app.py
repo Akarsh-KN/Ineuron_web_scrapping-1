@@ -63,7 +63,7 @@ def index():
                 try:
                     course_list1 = scrap_data.get_course_list(search_url1)
                     course_url_list = scrap_data.get_course_urls(course_list1)
-                    course_data_list = scrap_data.get_course_details(course_url_list[:3])
+                    course_data_list = scrap_data.get_course_details(course_url_list)
                     course_data_final_list = scrap_data.scrap_course_data(course_data_list)
                 except Exception as e:
                     logging.info('Failed in parsing operation')
