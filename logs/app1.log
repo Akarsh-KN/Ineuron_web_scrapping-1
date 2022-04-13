@@ -1,0 +1,43 @@
+werkzeug - 2022-04-12 23:40:20,331 - INFO -  * Restarting with stat
+werkzeug - 2022-04-12 23:40:20,920 - WARNING -  * Debugger is active!
+werkzeug - 2022-04-12 23:40:20,926 - INFO -  * Debugger PIN: 508-687-340
+werkzeug - 2022-04-12 23:40:20,955 - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+werkzeug - 2022-04-12 23:40:22,281 - INFO - 127.0.0.1 - - [12/Apr/2022 23:40:22] "GET / HTTP/1.1" 200 -
+werkzeug - 2022-04-12 23:40:22,321 - INFO - 127.0.0.1 - - [12/Apr/2022 23:40:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+werkzeug - 2022-04-12 23:40:22,321 - INFO - 127.0.0.1 - - [12/Apr/2022 23:40:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+root - 2022-04-12 23:40:25,140 - INFO - Connecting to DB
+root - 2022-04-12 23:40:25,341 - INFO - DB connection is successful
+root - 2022-04-12 23:40:26,352 - INFO - Data is already present in the database. So pulling data from DB
+werkzeug - 2022-04-12 23:40:26,761 - INFO - 127.0.0.1 - - [12/Apr/2022 23:40:26] "POST /scrap HTTP/1.1" 200 -
+werkzeug - 2022-04-12 23:40:26,801 - INFO - 127.0.0.1 - - [12/Apr/2022 23:40:26] "[33mGET /style.css HTTP/1.1[0m" 404 -
+werkzeug - 2022-04-12 23:40:26,801 - INFO - 127.0.0.1 - - [12/Apr/2022 23:40:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+werkzeug - 2022-04-12 23:41:31,762 - INFO -  * Restarting with stat
+werkzeug - 2022-04-12 23:41:32,364 - WARNING -  * Debugger is active!
+werkzeug - 2022-04-12 23:41:32,368 - INFO -  * Debugger PIN: 508-687-340
+werkzeug - 2022-04-12 23:41:32,402 - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+werkzeug - 2022-04-12 23:41:33,507 - INFO - 127.0.0.1 - - [12/Apr/2022 23:41:33] "GET / HTTP/1.1" 200 -
+werkzeug - 2022-04-12 23:41:33,537 - INFO - 127.0.0.1 - - [12/Apr/2022 23:41:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+werkzeug - 2022-04-12 23:41:33,541 - INFO - 127.0.0.1 - - [12/Apr/2022 23:41:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+root - 2022-04-12 23:41:36,112 - INFO - Connecting to DB
+root - 2022-04-12 23:41:36,351 - INFO - DB connection is successful
+scrap_data - 2022-04-12 23:41:40,697 - INFO - Data retrieved successfully
+root - 2022-04-12 23:41:46,101 - INFO - Succesfully inserted the data into DB
+werkzeug - 2022-04-12 23:41:46,112 - INFO - 127.0.0.1 - - [12/Apr/2022 23:41:46] "POST /scrap HTTP/1.1" 200 -
+werkzeug - 2022-04-12 23:41:46,132 - INFO - 127.0.0.1 - - [12/Apr/2022 23:41:46] "[33mGET /style.css HTTP/1.1[0m" 404 -
+werkzeug - 2022-04-12 23:41:46,141 - INFO - 127.0.0.1 - - [12/Apr/2022 23:41:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+werkzeug - 2022-04-12 23:41:46,221 - INFO - 127.0.0.1 - - [12/Apr/2022 23:41:46] "[33mGET /style.css HTTP/1.1[0m" 404 -
+werkzeug - 2022-04-13 00:14:05,447 - INFO -  * Restarting with stat
+werkzeug - 2022-04-13 00:14:06,166 - WARNING -  * Debugger is active!
+werkzeug - 2022-04-13 00:14:06,167 - INFO -  * Debugger PIN: 508-687-340
+werkzeug - 2022-04-13 00:14:06,207 - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+werkzeug - 2022-04-13 00:14:09,817 - INFO - 127.0.0.1 - - [13/Apr/2022 00:14:09] "GET / HTTP/1.1" 200 -
+werkzeug - 2022-04-13 00:14:09,868 - INFO - 127.0.0.1 - - [13/Apr/2022 00:14:09] "GET /static/css/main.css HTTP/1.1" 200 -
+werkzeug - 2022-04-13 00:14:09,868 - INFO - 127.0.0.1 - - [13/Apr/2022 00:14:09] "GET /static/css/style.css HTTP/1.1" 200 -
+root - 2022-04-13 00:14:13,520 - INFO - Connecting to DB
+root - 2022-04-13 00:14:13,767 - INFO - DB connection is successful
+scrap_data - 2022-04-13 00:14:16,625 - INFO - Data retrieved successfully
+scrap_data - 2022-04-13 00:14:21,667 - INFO - Successfully Scrapped the data
+root - 2022-04-13 00:14:22,067 - INFO - Succesfully inserted the data into DB
+werkzeug - 2022-04-13 00:14:22,077 - INFO - 127.0.0.1 - - [13/Apr/2022 00:14:22] "POST /scrap HTTP/1.1" 200 -
+werkzeug - 2022-04-13 00:14:22,102 - INFO - 127.0.0.1 - - [13/Apr/2022 00:14:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+werkzeug - 2022-04-13 00:14:22,102 - INFO - 127.0.0.1 - - [13/Apr/2022 00:14:22] "[33mGET /style.css HTTP/1.1[0m" 404 -
