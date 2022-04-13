@@ -158,25 +158,40 @@ def scrap_course_data(course_data):
             data1['isJobGuaranteeProgram'] = course_data[i]["props"]["pageProps"]["data"]["isJobGuaranteeProgram"]
             data1['description'] = course_data[i]["props"]["pageProps"]["data"]['details']['description']
 
-            if course_data[i]["props"]["pageProps"]["data"]['details']['pricing']['isFree']:
-                data1['pricing'] = 0
-            else:
-                data1['pricing'] = course_data[i]["props"]["pageProps"]["data"]['details']['pricing']['IN']
-
-            if (len(list(course_data[i]["props"]["pageProps"]["data"]['meta']['projects'].keys())) == 0):
+            if 'pricing' not in course_data[0]["props"]["pageProps"]["data"]['details']:
+                data1['pricing'] = 'NULL'
                 data1['projects'] = "NUll"
                 data1['projects_overview'] = "NUll"
+                data1['curriculum'] = 'NULL'
+                data1['curriculum_overview'] = 'NULL'
+                data1['requirements'] = 'NULL'
+                data1['features'] = 'NULL'
+                data1['learn'] = 'NULL'
+
+                l.append(data1)
+
+                continue
+
             else:
-                data1['projects'] = get_projects(course_data[i])
-                data1['projects_overview'] = get_project_headings(course_data[i])
+                if course_data[i]["props"]["pageProps"]["data"]['details']['pricing']['isFree']:
+                    data1['pricing'] = 0
+                else:
+                    data1['pricing'] = course_data[i]["props"]["pageProps"]["data"]['details']['pricing']['IN']
 
-            data1['curriculum'] = get_curriculum(course_data[i])
-            data1['curriculum_overview'] = get_curriculum_headings(course_data[i])
-            data1['requirements'] = course_data[i]["props"]["pageProps"]["data"]['meta']['overview']['requirements']
-            data1['features'] = course_data[i]["props"]["pageProps"]["data"]['meta']['overview']['features']
-            data1['learn'] = course_data[i]["props"]["pageProps"]["data"]['meta']['overview']['learn']
+                if (len(list(course_data[i]["props"]["pageProps"]["data"]['meta']['projects'].keys())) == 0):
+                    data1['projects'] = "NUll"
+                    data1['projects_overview'] = "NUll"
+                else:
+                    data1['projects'] = get_projects(course_data[i])
+                    data1['projects_overview'] = get_project_headings(course_data[i])
 
-            l.append(data1)
+                data1['curriculum'] = get_curriculum(course_data[i])
+                data1['curriculum_overview'] = get_curriculum_headings(course_data[i])
+                data1['requirements'] = course_data[i]["props"]["pageProps"]["data"]['meta']['overview']['requirements']
+                data1['features'] = course_data[i]["props"]["pageProps"]["data"]['meta']['overview']['features']
+                data1['learn'] = course_data[i]["props"]["pageProps"]["data"]['meta']['overview']['learn']
+
+                l.append(data1)
         logger.info('Successfully Scrapped the data')
         return l
     except Exception as e:
